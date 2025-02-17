@@ -24,6 +24,14 @@ val articulos = listOf(articulo1, articulo2, ordenador1, ordenador2)
 ### Responde a las siguientes preguntas:
 
 1. ¿De qué tipo genera en la lista por defecto el compilador?
+
+
+
 2. ¿Qué está ocurriendo en este ejemplo con respecto a lo que hemos visto del polimorfismo de la herencia?
+
+
+
 3. ¿Qué pasaría si creáramos la lista con `listOf<Ordenador>`? ¿Y si la hiciéramos con `listOf<Any>`?
+
+
 
