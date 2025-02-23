@@ -25,13 +25,14 @@ val articulos = listOf(articulo1, articulo2, ordenador1, ordenador2)
 
 1. ¿De qué tipo genera en la lista por defecto el compilador?
 
-
+List<Articulo>
 
 2. ¿Qué está ocurriendo en este ejemplo con respecto a lo que hemos visto del polimorfismo de la herencia?
 
-
+Se aplica polimorfismo dinámico: los métodos sobrescritos (como promocionNavidad()) se ejecutan según el tipo real del objeto (Articulo u Ordenador), no el tipo de la lista.
 
 3. ¿Qué pasaría si creáramos la lista con `listOf<Ordenador>`? ¿Y si la hiciéramos con `listOf<Any>`?
 
-
+Si creáramos la lista de <Ordenador>, solo aceptaría objetos de tipo Ordenador. No podrías añadir Articulo.
+Si, por otro lado, usásemos una lista de <Any>, permitiría mezclar cualquier tipo, pero perderías la seguridad de tipos y tendrías que usar type-checks y casts para llamar a métodos específicos.
 
